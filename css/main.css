@@ -1,0 +1,299 @@
+ul{
+    list-style: none;
+    display: inline-block;
+    }
+ 
+.social{
+    display: inline-block;
+}
+.fa-face{
+    color:#ffffff;
+    border-radius:30px;
+    height:40px;
+    width:40px;
+    background-color: #1b4fbe;
+    padding:15px;
+}
+.fa-twitter{
+    background-color:#17a2b8;
+    padding:13px;
+    color:#ffffff;
+    border-radius:30px;
+    height:40px;
+    width:40px;
+}
+.fa-inst{
+    background-color:#4a4d41;
+    padding:13px;
+    color:#ffffff;
+    border-radius:30px;
+    height:40px;
+    width:40px;
+}
+.fa-phon{
+    background-color:#4a4d41;
+    padding:13px;
+    color:#ffffff;
+    border-radius:30px;
+    height:40px;
+    width:40px;
+}
+.fa-envelope{
+        background-color:#b81717;
+        padding:12px;
+        color:#ffffff;
+        border-radius:30px;
+        height:40px;
+        width:40px;
+}
+.nav-link{
+    color:#ffffff !important;
+}
+.nav-item{
+    margin-left:25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform:uppercase;
+    
+}
+.nav-item:hover{
+    border-bottom:3px solid #ffffff;  
+}
+.navbar-brand{
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    color:#ffffff !important; 
+    border:1px solid #fcfcfc;
+    border-radius:6px; 
+    padding:5px;
+}
+.navbar{
+    position: fixed !important;
+    z-index: 100;
+    top:0%;
+    width: 100%;
+    
+}
+.h1-name{
+    color:#fff !important;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+}
+.wrap{
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+#header{
+    background: url('../img/counter-bg.jpg') no-repeat center center fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 620px;
+}
+.what{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: 600;
+}
+.fa-desk{
+    background-color:#17a2b8;
+    padding:25px;
+    color:#ffffff;
+    border-radius:100px !important;
+    height:90px;
+    width:90px;
+}
+.h2-text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+/* Project Section */
+#project{
+    background-color: rgb(195, 214, 208);
+}
+.img-test{
+    background: url('../img/map-delta.svg')   no-repeat;
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+}
+.img-biz{
+    background: url('../img/bizintel-bg.png')   no-repeat;
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+}
+.img-gas{
+    background: url('../img/gas.png')   no-repeat;
+    height: 250px;
+    background-position: center center;
+    background-color:#67f173;
+    
+}
+.p-non{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 100;
+    color:#ffffff;
+}
+.overlay-2 {
+    position: relative;
+    width: 50%;
+  }
+  .over{
+    display: block;
+    width: 50%;
+    height: auto;
+ }
+  
+  .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#17a2b8;
+    opacity: 0.89;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform:scale(0);
+    transition: 3s ease;
+  }
+  
+  .overlay-2:hover .text {
+    transform: scale(1)
+  }
+  
+  .image{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 18px;
+    right: 15px;
+  }
+  .back-to-top, span {
+    display: block;
+   
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    
+   color: #3498db;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }  
+   
+  .h5-partners{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 600;
+  }
+ 
+  #contact{
+    background:  linear-gradient(rgba(0, 0, 34, 0.55),rgba(0, 0, 34, 0.55)),  url('../img/PAGEKJDK.gif') no-repeat fixed;
+      height: 600px;
+      background-size: cover;
+  }
+  #inputTextarea1, #inputName, #inputEmail{
+    background-color: transparent;
+    color:#ffffff;
+  }
+  .btn-sub{
+      float:right;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px)  {
+   
+    ul{
+        list-style: none;
+        display: inline-block;
+        }
+     
+    .social{
+        display: inline-block;
+    }
+    .fa-face{
+        color:#ffffff;
+        border-radius:15px;
+        height:25px;
+        width:25px;
+        background-color: #1b4fbe;
+        padding:5px;
+    }
+    .fa-twitter{
+        background-color:#17a2b8;
+        padding:4px 4px 4px 4px;
+        color:#ffffff;
+        border-radius:15px;
+        height:25px;
+        width:25px;
+    }
+    .fa-inst{
+        background-color:#4a4d41;
+        padding:4px 4px 4px 4px;
+        color:#ffffff;
+        border-radius:15px;
+        height:25px;
+        width:25px;
+    }
+    .fa-phon{
+        background-color:#4a4d41;
+        padding:4px 4px 4px 4px;
+        color:#ffffff;
+        border-radius:15px;
+        height:25px;
+        width:25px;
+    }
+    .fa-envelope{
+            background-color:#b81717;
+            padding:4px 4px 4px 4px;
+            color:#ffffff;
+            border-radius:15px;
+            height:25px;
+            width:25px;
+    }
+    #contact{
+        background:  linear-gradient(rgba(0, 0, 34, 0.55),rgba(0, 0, 34, 0.55)),  url('../img/PAGEKJDK.gif') no-repeat fixed center center;
+          height: 700px;
+          background-size: contain;
+      }
+      .btn-sub{
+        width: 100%;
+      }
+    
+    
+}
