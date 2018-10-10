@@ -10,96 +10,23 @@
     <link rel="icon" href="img/logo1.png" sizes="18x18" type="img/jpg">
     <title>Enemali's Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/portfolio.min.css">
+    
     
      <!--External Styles-->
  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+ 
 </head>
-<script>
-        
-        var TxtType = function(el, toRotate, period) {
-               this.toRotate = toRotate;
-               this.el = el;
-               this.loopNum = 0;
-               this.period = parseInt(period, 10) || 2000;
-               this.txt = '';
-               this.tick();
-               this.isDeleting = false;
-           };
-
-           TxtType.prototype.tick = function() {
-               var i = this.loopNum % this.toRotate.length;
-               var fullTxt = this.toRotate[i];
-
-               if (this.isDeleting) {
-               this.txt = fullTxt.substring(0, this.txt.length - 6);
-               } else {
-               this.txt = fullTxt.substring(0, this.txt.length + 1);
-               }
-
-               this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-               var that = this;
-               var delta = 200 - Math.random() * 100;
-
-               if (this.isDeleting) { delta /= 2; }
-
-               if (!this.isDeleting && this.txt === fullTxt) {
-               delta = this.period;
-               this.isDeleting = true;
-               } else if (this.isDeleting && this.txt === '') {
-               this.isDeleting = false;
-               this.loopNum++;
-               delta = 500;
-               }
-
-               setTimeout(function() {
-               that.tick();
-               }, delta);
-           };
-
-           window.onload = function() {
-               var elements = document.getElementsByClassName('typewrite');
-               for (var i=0; i<elements.length; i++) {
-                   var toRotate = elements[i].getAttribute('data-type');
-                   var period = elements[i].getAttribute('data-period');
-                   if (toRotate) {
-                     new TxtType(elements[i], JSON.parse(toRotate), period);
-                   }
-               }
-
-           };   
-     </script>
+<script  type="text/javascript" src="json/writing-text-script.js"></script>
      <noscript>
          Your browser doesn't support javascript
      </noscript>
 <body>
-    <!-- <section id="top">
-        <div class="container">
-            <div class="row ">
-                <div class="col-sm-6 col-6 my-1 py-1">
-                        <ul>
-                                <li class="social"><a href="#"><i class="fa fa-facebook fa-1x fa-face"></i></a></li>
-                                <li class="social"><a href="#"><i class="fa fa-twitter fa-1x fa-twitter"></i></a></li>
-                                <li class="social"><a href="#"><i class="fa fa-instagram fa-1x fa-inst"></i></a></li>
-                            </ul>
-                </div>
-                <div class="col-sm-6 col-6 my-1 py-1">
-                        <ul>
-                                <li class="social"><a href="#"><i class="fa fa-envelope fa-1x fa-envelope" aria-hidden="true"></i><span class="d-md-inline d-none">   simonnugwa7@gmail.com</span></li>
-                                <li class="social"><a href="#"><i class="fa fa-phone fa-1x fa-phon"></i></a><span class="d-md-inline d-none">+234-7068382608</span></li>
-                           </ul>
-                </div>
-            </div> 
-        </div>
-    </section> -->
-
+    
     <section id="header">
             <nav class="navbar navbar-expand-lg navbar-light bg-info ">
                     <div class="container">
-                    <a class="navbar-brand" href="#">E S O</a>
+                    <a class="navbar-brand" href="#"><img class="img-fluid" src="img/portfolio-logo-1.jpg" width="60"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -155,8 +82,8 @@
                         </div>
                         <div class="col-md-3 pt-4  lead wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                                 <i class="fa fa-rocket fa-desk fa-2x"></i>
-                                <h2 class="h2-text pt-2">Frameworks</h2>
-                                <p>Highly skilled with framework like Bootstraps(i.e CSS framework), Laravel(i.e PHP framework)</p>
+                                <h2 class="h2-text pt-2">Library & Framework</h2>
+                                <p>Highly skilled with Library like Bootstraps(i.e HTML/CSS/JS component Library), Laravel(i.e PHP framework).</p>
                     
                               </div>
                   </div>
@@ -165,68 +92,58 @@
 
     <section id="project">
             <div class="container pt-5 pb-5">
-                    <h2 class=" what text-center wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms   ">PROJECTS<h2>
+                    <h2 class=" what text-white text-center wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms   ">PROJECTS<h2>
                       <div class="row text-center">
-                        <div class="col-md-4 overlay-2 wow fadeInDown" data-wow-duration="1000ms">
-                             <p class="image img-test text-center text-white what pt-5"><img src="img/NoNdia Logo.png"><br>Network of Niger Delta Incubators and Acceleration (NoNDIA)</p> 
+                        <div class="col-md-3 overlay-2 wow fadeInDown" data-wow-duration="1000ms">
+                             <p class="image img-test text-center text-white what pt-3"><img src="img/NoNdia Logo.png"><br>Network of Niger Delta Incubators and Acceleration. (NoNDIA).</p> 
                               <div class="text" data-wow-delay="600">
                                     <p class="pt-5 p-non">NoNDIA is a non-profit organization for technology and business incubators, hubs, co-working spaces, startups, communities, software developers...</p>
                                  <a href="https://nondia.org/" type="button" class="btn btn-light over">View</a> 
                              </div>
                          </div>
-                          <div class="col-md-4 overlay-2 lead wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms ">
-                                <p class="image img-biz text-center text-dark what pt-5"><img src="img/Bizintel-logo.svg"><br>Bring Your Business Idea To Life with team of brilliant individuals with the aim of making your business better.</p> 
+                          <div class="col-md-3 overlay-2 lead wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms ">
+                                <p class="image img-biz text-center text-dark what pt-2"><img src="img/Bizintel-logo.svg"><br>Bring Your Business Idea To Life with team of brilliant individuals with the aim of making your business better.</p> 
                                <div class="text" data-wow-delay="600">
                                    <p class="pt-5 p-non">Nigeria business environment is a challenging one and ability to navigate the ecosystem is a difference between successful and failed businesses..</p>
                                 <a href="https://bizintelng.com/" type="button" class="btn btn-light over">View</a> 
                             </div>
                              </div>
-                             <div class="col-md-4 overlay-2 lead wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms ">
+                             <div class="col-md-3 overlay-2 lead wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms ">
                                     <!-- <img class="img-fluid image " width="50px" src="img/gas.png"> -->
-                                <p class="image img-gas text-center text-dark what pt-5"><img src="img/peagas.png"><br>nnkm</p> 
+                                <p class="image img-gas text-center text-dark what pt-2"><img src="img/peagas.png"><br>Peagas is a well-built online platform with an easy-to-navigate user-interface to ensure efficiency in finding the desired services.</p> 
                                 <div class="text" data-wow-delay="600">
-                                    <p class="pt-5 p-non">Nigeria business environment is a challenging one and ability to navigate the ecosystem is a difference between successful and failed businesses..</p>
+                                    <p class="pt-5 p-non">Paegas.ng is a premium online and mobile gas market place. With our responsive platform working perfectly on all devices,we offer seamless sales of cooking gas products.....</p>
                                  <a href="https://peagas.ng/" type="button" class="btn btn-light over">View</a> 
                              </div>
                              </div>
+                             <div class="col-md-3 overlay-2 lead wow fadeInDown" data-wow-duration="1000ms">
+                                    <p class="image img-acad text-center text-dark pt-5"><em>Academie</em><span class="acad">Academie.io create indelible digital experience in diverse areas...</span></p> 
+                                            <div class="text " data-wow-delay="600">
+                                           <p class="pt-5 p-non">We Dream, We Build and We Mentor</p>
+                                           <a href="https://academie.io/" type="button" class="btn btn-light over">View</a> 
+                                        </div>
+                                </div>
                          </div>
-                         <div class="row text-center pt-5">
-                                <div class="col-md-4 overlay-2 lead wow fadeInDown" data-wow-duration="1000ms">
-                                     <img class="img-fluid image " src="img/counter-bg.jpg">
-                                        <div class="text " data-wow-delay="600">
-                                            <p class="">Check the PAge out</p>
-                                         <button type="button" class="btn btn-default over  ">Learn more</button> 
-                                     </div>
-                                 </div>
-                                  <div class="col-md-4 overlay-2 lead wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms ">
-                                        <img class="img-fluid image ms " src="img/contact-bg.jpg">
-                                           <div class="text " data-wow-delay="600">
-                                               <p class="">Check the PAge out</p>
-                                              <button type="button" class="btn btn-default over  ">Learn more</button> 
-                                             </div>
-                                     </div>
-                                     <div class="col-md-4 overlay-2 lead wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms ">
-                                         <img class="img-fluid image" src="img/hero-area.jpg">
-                                            <div class="text">
-                                                <p class="">Check the PAge out </p>
-                                              <button type="button" class="btn btn-default over  ">Learn more</button> 
-                                            </div>
-                                     </div>
-                                 </div>
+                      
              </div> 
     </section>
     
-    <section id="partners">
+    <section id="words">
         <div class="container pt-5">
-            <h5 class=" text-center h5-partners">What Clients Say</h5>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
+                    <h5 class=" text-center h5-partners"> Fanny Brice said it well,</h5>
+                    <p class="h5-partners">
+                        “Let the world
+                        know you as you are, not as you think you
+                        should be—because sooner or later, if you’re posing, you will forget the pose and then
+                        where are you?”</p>
+              </div>
+              <div class="col-md-2"></div>
+            </div>           
         </div>
     </section>
-
-    <!-- <section id="contact">
-        <div class="container">
-
-        </div>
-    </section> -->
 
       <!-- Contact -->
       <section id="contact">
@@ -236,50 +153,65 @@
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-8 ">
-                            <h1 class="name2 h1-name text-center text-dark"><span class="name2">.<span>
-                                    <a href="" class="typewrite text-center text-dark" data-period="2000" data-type='["Have a question or want to work together?","Or Looking for someone to Hire?","I will get back to you in a jiffy","Thanks."]'>
+                            <h1 class="name2 h1-name text-center text-primary"><span class="name2"><span>
+                                    <a href="" class="typewrite text-center" data-period="5000" data-type='["Have a question or want to work together?","Or Looking for someone to Hire?","I will get back to you in a jiffy.","Thanks."]'>
                                         <span class="wrap"></span></a>
                                     </h1><br>
-                            <!-- <p class="what h5-partners text-center text-white">Have a question or want to work together?</p> -->
-
-                            <form id="gform" action="https://script.google.com/macros/s/AKfycbxOKE-hi_APsP8sxratWDeXdAJZZeXjKplh9EwlevagSqjq0dgL/exec" method="POST">
+                                <form class="gform" action="https://script.google.com/macros/s/AKfycbxOKE-hi_APsP8sxratWDeXdAJZZeXjKplh9EwlevagSqjq0dgL/exec" method="POST">
                                     <div class="form-group row">
                                       <label for="inputName" class="col-sm-2 col-form-label text-white what">Name</label>
                                       <div class="col-sm-10">
-                                        <input type="name" name="yourname" class="form-control" id="inputName" placeholder="Please Enter  Your FullName">
+                                        <input type="name" name="yourname" class="form-control" id="inputName" placeholder="John Don">
                                       </div>
                                     </div>
                                     <div class="form-group row">
                                       <label for="inputEmail" class="col-sm-2 col-form-label text-white what">Email Address</label>
                                       <div class="col-sm-10">
-                                        <input type="email" name="address" class="form-control" id="inputEmail" placeholder="Please Enter Your Email Address">
+                                        <input type="email" name="address" class="form-control" id="inputEmail" placeholder="example@gmail.com">
                                       </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="textarea" class="col-sm-2 col-form-label text-white what">Message</label>
                                      <div class="col-sm-10">
-                                        <textarea class="form-control" name="message" id="inputTextarea1" rows="4" col="5"  placeholder="Leave a Message"></textarea>
+                                        <textarea class="form-control" name="message" id="inputTextarea" rows="4" col="5"  placeholder="Leave a Message"></textarea>
                                       </div>
                                       </div>   
                                       <button type="submit" class="btn btn-info btn-lg btn-sub d-md-inline d-block">Submit</button>
-
+                                      <div style="display:none" class="thankyou_message"><h2 class="text-white pt-3">Thanks for contacting us...We will get back to you soon</h2></div>
                                     </form>    
                     </div>
                     <div class="col-md-2"></div>
                 </div>
-                 <div style="display:none" id="thankyou_message"><h2>Thanks for contacting us...We will get back to you soon</h2></h2></div>
+                
             </div>
         </section>
 
+
+<section id="social">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-9 col-12 col-2 col-4 col-10 order-12 mt-4">
+                       <p class="p-copy">&copy All Rights Reserved.</p>
+                </div>
+                <div class="col-sm-3 col-12 order-md-12 mt-4">
+                        <ul>
+                                <li class="social"><a href="https://www.facebook.com/Enemali Simon"><i class="fa fa-facebook fa-1x fa-face"></i></a></li>
+                                <li class="social"><a href="https://www.twitter.com/CymonKings"><i class="fa fa-twitter fa-1x fa-twitter"></i></a></li>
+                                <li class="social"><a href="https://www.instagram.com/SymonBerry"><i class="fa fa-instagram fa-1x fa-inst"></i></a></li>
+                                <li class="social"><a href="https://www.linkedin.com/Enemali Simon"><i class="fa fa-linkedin fa-1x fa-twitter"></i></a></li>
+                            </ul>
+                </div>
+            </div> 
+        </div>
+    </section> 
 
   <!-- Go To Top Link -->
   <a href="#" class="back-to-top">
         <span class="fa fa-arrow-up"></span>
       </a>
-  
 
-<script data-cfasync="false" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-
+   
+    <script data-cfasync="false" type="text/javascript" src="json/form-submission-handler.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
